@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 header {
-  height: 50px;
-    background-color: #292c35;
-    display: flex;
-    justify-items: baseline;
-    align-content: space-around;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  height: 70px;
+  background-color: #292c35;
+  display: flex;
+  justify-items: baseline;
+  align-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 header a{
@@ -32,9 +32,13 @@ body {
   transition: background 0.2s linear;
 }
 
+h1 {
+  text-align: center;
+}
+
 body.dark {background-color: #292c35;} /* #9b59b6 */
 
-body.dark h1, body.dark .support a {color: #fff;}
+body.dark h1, body.dark p, body.dark .support a {color: #fff;}
 
 .checkbox {
   opacity: 0;
@@ -73,14 +77,6 @@ body.dark h1, body.dark .support a {color: #fff;}
   transform: translateX(24px);
 }
 
-
-
-
-
-
-
-
-
 /*  Support me if you like it */
 .support {
 	position: absolute;
@@ -98,4 +94,110 @@ body.dark h1, body.dark .support a {color: #fff;}
 
 .support a:hover{
   transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+  margin: 0 auto;
+  height: calc(100vh - 70px - 50px);
+}
+
+.sun {
+  width: 350px;
+  top: 50%;
+  border-radius: 50%;
+  /*box-shadow: rgb(204, 153, 0) 0px 0px 50px 0px;*/
+}
+
+.circle{
+  
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -o-flex;
+   
+  display: -webkit-flex;
+  display:         flex;
+  
+  -ms-align-items: center;
+-moz-align-items: center;
+-o-align-items: center;
+  
+  -webkit-align-items: center;
+          align-items: center;
+  
+  -ms-justify-content: center;
+-moz-justify-content: center;
+-o-justify-content: center;
+  
+  -webkit-justify-content: center;
+          justify-content: center;
+  
+  
+  background-color:transparent;
+   
+  border-radius: 100%;
+     webkit-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
+  -webkit-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
+      -ms-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
+      -moz-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
+         animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
+}
+/*--(153, 230, 0)  --*/
+
+ @-ms-keyframes at-ripple
+{0% {box-shadow: 0 4px 20px
+rgba(204, 153, 0, 0.1), 0 0 0 0  
+rgba(204, 153, 0, 0.1), 0 0 0 10px 
+rgba(204, 153, 0, 0.1), 0 0 0 20px 
+rgba(204, 153, 0, 0.1); } 100%
+ 
+{box-shadow: 0 4px 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 20px 
+rgba(38, 38, 38, 0.1), 0 0 0 30px 
+rgba(38, 38, 38, 0); }}
+
+
+
+
+ @-moz-keyframes at-ripple
+{0% {box-shadow: 0 4px 20px
+rgba(204, 153, 0, 0.1), 0 0 0 0  
+rgba(204, 153, 0, 0.1), 0 0 0 10px 
+rgba(204, 153, 0, 0.1), 0 0 0 20px 
+rgba(204, 153, 0, 0.1); } 100%
+ 
+{box-shadow: 0 4px 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 20px 
+rgba(38, 38, 38, 0.1), 0 0 0 30px 
+rgba(38, 38, 38, 0); }}
+
+
+
+ @-webkit-keyframes at-ripple
+{0% {box-shadow: 0 4px 20px
+rgba(204, 153, 0, 0.1), 0 0 0 0  
+rgba(204, 153, 0, 0.1), 0 0 0 10px 
+rgba(204, 153, 0, 0.1), 0 0 0 20px 
+rgba(204, 153, 0, 0.1); } 100%
+ 
+{box-shadow: 0 4px 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 20px 
+rgba(38, 38, 38, 0.1), 0 0 0 30px 
+rgba(38, 38, 38, 0); }}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50px;
+  background-color: #111;
+  color: #fff;
 }

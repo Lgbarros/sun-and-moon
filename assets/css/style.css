@@ -26,6 +26,10 @@ body {
   transition: background 0.2s linear;
 }
 
+.logo {
+  width: 9.5%;
+}
+
 h1 {
   text-align: center;
   color: #b52903;

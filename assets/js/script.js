@@ -3,7 +3,7 @@ checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark");
 
   if (document.body.classList.contains('dark')) {
-    document.getElementById("sun").src="./assets/img/lua.png";
+    document.getElementById("sun").src="./assets/img/lua.jpg";
 
     document.getElementById("title").innerHTML = "A Lua";
     document.getElementById("text-1").innerHTML = "Lua é o único satélite natural da Terra e o quinto maior do Sistema Solar.";

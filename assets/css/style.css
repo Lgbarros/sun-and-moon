@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+/* HEADER */
+
 header {
   height: 70px;
   background-color: #111;
@@ -17,31 +19,7 @@ header a{
   text-decoration: none;
 }
 
-* {box-sizing: border-box;}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #000;
-  margin: 0;
-  transition: background 0.2s linear;
-}
-
-.logo {
-  width: 9.5%;
-}
-
-h1 {
-  text-align: center;
-  color: #b52903;
-}
-
-p {
-  color: #b52903;
-}
-
-body.dark {background-color: #292c35;} /* #9b59b6 */
-
-body.dark h1, body.dark p, body.dark .support a {color: #fff;}
+/* Checkbox para mudar de tema */
 
 .checkbox {
   opacity: 0;
@@ -80,23 +58,28 @@ body.dark h1, body.dark p, body.dark .support a {color: #fff;}
   transform: translateX(24px);
 }
 
-/*  Support me if you like it */
-.support {
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
+* {box-sizing: border-box;}
+
+/* BODY */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+  margin: 0;
+  transition: background 0.2s linear;
 }
 
-.support a {
-  color: #292c35;
-  font-size: 32px;
-  backface-visibility: hidden;
-  display: inline-block;
-  transition: transform 0.2s ease;
+.logo {
+  width: 9.5%;
 }
 
-.support a:hover{
-  transform: scale(1.1);
+h1 {
+  text-align: center;
+  color: #b52903;
+}
+
+p {
+  color: #b52903;
 }
 
 .container {
@@ -114,6 +97,34 @@ body.dark h1, body.dark p, body.dark .support a {color: #fff;}
   top: 50%;
   border-radius: 50%;
 }
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50px;
+  background-color: #111;
+  color: #fff;
+}
+
+footer p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50px;
+  background-color: #111;
+  color: #fff;
+}
+
+/* TEMA LUA */
+
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h1, body.dark p, body.dark .support a {color: #fff;}
 
 .circle{
   
@@ -138,7 +149,6 @@ body.dark h1, body.dark p, body.dark .support a {color: #fff;}
   -webkit-justify-content: center;
           justify-content: center;
   
-  
   background-color:transparent;
    
   border-radius: 100%;
@@ -162,9 +172,6 @@ rgba(38, 38, 38, 0.1), 0 0 0 10px
 rgba(38, 38, 38, 0.1), 0 0 0 20px 
 rgba(38, 38, 38, 0.1), 0 0 0 30px 
 rgba(38, 38, 38, 0); }}
-
-
-
 
  @-moz-keyframes at-ripple
 {0% {box-shadow: 0 4px 20px
@@ -194,15 +201,44 @@ rgba(38, 38, 38, 0.1), 0 0 0 20px
 rgba(38, 38, 38, 0.1), 0 0 0 30px 
 rgba(38, 38, 38, 0); }}
 
-footer p{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 50px;
-  background-color: #111;
-  color: #fff;
-}
+@-ms-keyframes at-ripple
+{0% {box-shadow: 0 4px 20px
+rgba(204, 153, 0, 0.1), 0 0 0 0  
+rgba(204, 153, 0, 0.1), 0 0 0 10px 
+rgba(204, 153, 0, 0.1), 0 0 0 20px 
+rgba(204, 153, 0, 0.1); } 100%
+ 
+{box-shadow: 0 4px 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 20px 
+rgba(38, 38, 38, 0.1), 0 0 0 30px 
+rgba(38, 38, 38, 0); }}
+
+ @-moz-keyframes at-ripple
+{0% {box-shadow: 0 4px 20px
+rgba(204, 153, 0, 0.1), 0 0 0 0  
+rgba(204, 153, 0, 0.1), 0 0 0 10px 
+rgba(204, 153, 0, 0.1), 0 0 0 20px 
+rgba(204, 153, 0, 0.1); } 100%
+ 
+{box-shadow: 0 4px 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 20px 
+rgba(38, 38, 38, 0.1), 0 0 0 30px 
+rgba(38, 38, 38, 0); }}
+
+ @-webkit-keyframes at-ripple
+{0% {box-shadow: 0 4px 20px
+rgba(204, 153, 0, 0.1), 0 0 0 0  
+rgba(204, 153, 0, 0.1), 0 0 0 10px 
+rgba(204, 153, 0, 0.1), 0 0 0 20px 
+rgba(204, 153, 0, 0.1); } 100%
+ 
+{box-shadow: 0 4px 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 10px 
+rgba(38, 38, 38, 0.1), 0 0 0 20px 
+rgba(38, 38, 38, 0.1), 0 0 0 30px 
+rgba(38, 38, 38, 0); }}
 
 body.dark .circle{
   
@@ -226,8 +262,7 @@ body.dark .circle{
   
   -webkit-justify-content: center;
           justify-content: center;
-  
-  
+
   background-color:transparent;
    
   border-radius: 100%;
@@ -236,113 +271,15 @@ body.dark .circle{
       -ms-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
       -moz-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
          animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
-}
-/*--(153, 230, 0)  --*/
 
- @-ms-keyframes at-ripple
-{0% {box-shadow: 0 4px 20px
-rgba(0, 0, 0, 0.1), 0 0 0 0  
-rgba(0, 0, 0, 0.1), 0 0 0 10px 
-rgba(0, 0, 0, 0.1), 0 0 0 20px 
-rgba(0, 0, 0, 0.1); } 100%
+         @-ms-keyframes at-ripple
+{0% {box-shadow: 0 4px 10px rgb(29 103 166), 0 0 0 10px rgb(43 99 154 / 99%), 0 0 0 20px rgb(67 85 121 / 69%), 0 0 0 30px rgb(55 75 99); } 100%
  
 {box-shadow: 0 4px 10px 
 rgba(38, 38, 38, 0.1), 0 0 0 10px 
 rgba(38, 38, 38, 0.1), 0 0 0 20px 
 rgba(38, 38, 38, 0.1), 0 0 0 30px 
 rgba(38, 38, 38, 0); }}
-
-
-
-
- @-moz-keyframes at-ripple
-{0% {box-shadow: 0 4px 20px
-rgba(0, 0, 0, 0.1), 0 0 0 0  
-rgba(0, 0, 0, 0.1), 0 0 0 10px 
-rgba(0, 0, 0, 0.1), 0 0 0 20px 
-rgba(0, 0, 0, 0.1); } 100%
- 
-{box-shadow: 0 4px 10px 
-rgba(38, 38, 38, 0.1), 0 0 0 10px 
-rgba(38, 38, 38, 0.1), 0 0 0 20px 
-rgba(38, 38, 38, 0.1), 0 0 0 30px 
-rgba(38, 38, 38, 0); }}
-
-
-
- @-webkit-keyframes at-ripple
-{0% {box-shadow: 0 4px 20px
-rgba(204, 153, 0, 0.1), 0 0 0 0  
-rgba(204, 153, 0, 0.1), 0 0 0 10px 
-rgba(204, 153, 0, 0.1), 0 0 0 20px 
-rgba(204, 153, 0, 0.1); } 100%
- 
-{box-shadow: 0 4px 10px 
-rgba(38, 38, 38, 0.1), 0 0 0 10px 
-rgba(38, 38, 38, 0.1), 0 0 0 20px 
-rgba(38, 38, 38, 0.1), 0 0 0 30px 
-rgba(38, 38, 38, 0); }}
-
-footer p{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 50px;
-  background-color: #111;
-  color: #fff;
-}
-
-body.dark .circle{
-  
-  display: -ms-flex;
-  display: -moz-flex;
-  display: -o-flex;
-   
-  display: -webkit-flex;
-  display:         flex;
-  
-  -ms-align-items: center;
--moz-align-items: center;
--o-align-items: center;
-  
-  -webkit-align-items: center;
-          align-items: center;
-  
-  -ms-justify-content: center;
--moz-justify-content: center;
--o-justify-content: center;
-  
-  -webkit-justify-content: center;
-          justify-content: center;
-  
-  
-  background-color:transparent;
-   
-  border-radius: 100%;
-     webkit-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
-  -webkit-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
-      -ms-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
-      -moz-animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
-         animation: at-ripple 0.9s linear infinite; animation: at-ripple 0.9s linear infinite;
-}
-/*--(153, 230, 0)  --*/
-
- @-ms-keyframes at-ripple
-{0% {box-shadow: 0 4px 20px
-rgba(204, 153, 0, 0.1), 0 0 0 0  
-rgba(204, 153, 0, 0.1), 0 0 0 10px 
-rgba(204, 153, 0, 0.1), 0 0 0 20px 
-rgba(204, 153, 0, 0.1); } 100%
- 
-{box-shadow: 0 4px 10px 
-rgba(38, 38, 38, 0.1), 0 0 0 10px 
-rgba(38, 38, 38, 0.1), 0 0 0 20px 
-rgba(38, 38, 38, 0.1), 0 0 0 30px 
-rgba(38, 38, 38, 0); }}
-
-
-
 
  @-moz-keyframes at-ripple
 {0% {box-shadow: 0 4px 20px
@@ -357,27 +294,45 @@ rgba(38, 38, 38, 0.1), 0 0 0 20px
 rgba(38, 38, 38, 0.1), 0 0 0 30px 
 rgba(38, 38, 38, 0); }}
 
-
-
  @-webkit-keyframes at-ripple
-{0% {box-shadow: 0 4px 20px
-rgba(204, 153, 0, 0.1), 0 0 0 0  
-rgba(204, 153, 0, 0.1), 0 0 0 10px 
-rgba(204, 153, 0, 0.1), 0 0 0 20px 
-rgba(204, 153, 0, 0.1); } 100%
+{0% {box-shadow: 0 4px 10px rgb(29 103 166), 0 0 0 10px rgb(43 99 154 / 99%), 0 0 0 20px rgb(67 85 121 / 69%), 0 0 0 30px rgb(55 75 99); } 100%
  
 {box-shadow: 0 4px 10px 
 rgba(38, 38, 38, 0.1), 0 0 0 10px 
 rgba(38, 38, 38, 0.1), 0 0 0 20px 
 rgba(38, 38, 38, 0.1), 0 0 0 30px 
 rgba(38, 38, 38, 0); }}
+}
+/*--(153, 230, 0)  --*/
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 50px;
-  background-color: #111;
-  color: #fff;
+/* MOBILE */
+
+@media (max-width: 991px) {
+  header {
+    padding: 0px 100px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  body {
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding: 5px;
+  }
+
+  .content {
+    padding: 15px;
+    text-align: justify;
+  }
+
+
 }
